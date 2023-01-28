@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+{% load crispy_forms_tags %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettre</title>
+    <meta name ="description" content="Une Application Web pour la gestion d'Ecole">
+
+    <!-- Inclure le Bootstrap 4 ici --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!--Inclure le Bootstrap 5 ici-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel ="stylesheet" href="">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+    <!--Inclure le  Bootstrap 5 ici-->
+
+    <!--Inclure le Jquery ici-->    
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script> 
+    <!--Inclure le Jquery ici-->  
+
+    <!--Inclure le Jquery UI ici-->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <!--Inclure le Jquery UI ici-->
+
+</head>
+<body>
+        <header class="py-4">      
+            <nav nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand text-uppercase fw-bold" href="#">
+                        <span class="bg-danger bg-gradient p-1 rounded-3 text-light">Ressources Humaines G4S CI </span> 
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'RH_G4S:accueil' %}" title="Accueil">Accueil</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'RH_G4S:modele' %}" target="_blank" title="Cliquez ici pour voir le modèle">Modèle</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" title="Cliquez ici pour créer une lettre">Lettre</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" title="Nous contacter">Contact</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="container"> 
+            <section  class="my-5" id="connection">
+                <div class="container">
+                <div class="row gy-4 align-items-center">
+                    <div class="col-12 col-md-12">
+                        <h1 class="fw-bold text-md-center" id ="defile"><center>Modèle de lette PS avec Préavis</center></h1>
+                        <!-- 
+                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#se_connecter" aria-controls="connection">Cliquez ici pour vous connecter</a> --> 
+                        
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="container text-md-center">
+               <H3> <mark>  Veuillez renseigner le formulaire ci-dessous relatif aux informations sur l'employé </mark> </H3>
+            </section>
+            <br> <br>
+
+            <section class="container">   
+                <form method="POST"  action="{% url 'RH_G4S:lettre' %}">  
+                    {% csrf_token %}
+
+                    {% crispy formulaire %}
+                    <!--
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    -->
+                    <br>  <br>
+                </form>
+            </section>
+
+            <section>
+                <br> <br>
+
+            </section>
+        </main>
+</body>
+</html>        

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+
+
+<!-- Inclure le Bootstrap 4 ici --> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- Custom styles for this template -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	
+</script>
+
+</head>
+
+<body lang=FR>
+
+<button onclick="generatePDF()" class="btn btn-danger">Télécharger au format PDF</button>
+
+		   
+<div id="invoice" class="container">
+
+	<main class="container"> 
+		<br> <br>
+		 <section class="container">
+			<br> <br>	
+			 <div class="row"> 
+				 <div class="col">
+						 
+				 </div>
+
+
+				 <div class="col">
+					 <p class="text-right">
+						 Abidjan le 15 Janvier 2023 <br> <br>
+						 <strong>Monsieur Christ David Houston</strong> <br> 
+						 <strong>Fonction : Garde Simple </strong> <br> 
+						 <strong>Matricule : 100890 </strong> <br> 
+						 <strong>Embauché le 07/01/2023 </strong> <br>  
+						 <strong>Catégorie : 1ere des employés  </strong> <br>
+						 <strong> CNPS : 123234567 </strong> <br>
+					 </p>
+				 </div>
+			 </div>
+			 
+			 <h6> Nos Réf. : DRHF/MDA/MC/11-22 </h6>
+			 <p> <u>OBJET </u>: Votre démission </p>
+
+			 <p> <strong>Monsieur, </strong> </p>
+
+			 <p>
+				 Nous accusons réception de votre courrier de démission réceptionné par nos soins le 02
+				 novembre 2022 par lequel vous nous informez de votre volonté de mettre fin au contrat de travail
+				 vous liant à G4S. Aussi avez-vous souhaité ne pas effectuer de préavis.
+			 </p>
+
+			 <p>
+				 Nous en prenons acte.
+			 </p> 
+			 
+			 <p>
+				 Néanmoins, nous vous rappelons que conformément aux dispositions de l’article 18.4 du Code du
+				 Travail, la rupture régulière du contrat de travail est subordonnée à un préavis réciproque
+				 déterminé selon l’ancienneté et la catégorie de l’employé.
+			 </p>
+			 
+			 <p>
+				 Tenant compte de ce qui précède, la durée du préavis auquel vous devrez vous conformer est de
+				 <strong> trois (03) mois </strong> allant <strong> du 01 janvier 2023 au 01 Avril 2023. </strong>
+			 </p>  
+			 
+			 <p>
+				 Aussi, suivant l’article 18.7 du Code du Travail, l’inobservation intégrale du préavis emporte
+				 obligation pour la partie responsable, de verser à l’autre partie une indemnité dont le montant
+				 correspond à la rémunération et aux avantages de toute nature dont auraient bénéficiés le
+				 travailleur. Ceci équivaut dans votre cas à nous verser <strong> une indemnité compensatrice de préavis
+				 d’un montant brut de Cent Vingt-Trois Mille Quatre Cent Cinquante-Six (123 456) Francs
+				 CFA. </strong>
+			 </p>
+			 
+			 <p>
+				 Nous vous rappelons à toutes fins utiles que vous avez bénéficié d’un prêt scolaire qui s'élève à
+				 hauteur de <strong> Trois Cent Douze Mille Quatre Cent Cinquante-Cinq (312 455) F CFA que vous
+				 restez nous devoir, à ce jour. </strong>
+			 </p>
+			 
+			 <p>
+				 La rupture de nos relations contractuelles entraîne de facto l’exigibilité anticipée de ces montants,
+				 nous procéderons donc à une compensation légale. Dans le cas où le montant de votre solde de
+				 tout compte ne couvrirait pas la totalité des sommes dont vous êtes redevable, nous vous prions
+				 de bien vouloir nous indiquer les dispositions que vous entendez prendre à l’effet de régler dans
+				 l’immédiat, l’intégralité de ces montants.
+			 </p>
+			 
+			 <br> <br> <br> <br> <br> <br>
+			 <p>
+				 Vous voudrez bien prendre attache avec la Direction des Ressources Humaines afin de remplir les
+				 formalités relatives à votre départ définitif.
+			 </p>    
+
+			 <p>
+				 Veuillez agréer, <strong> Monsieur, </strong> nos salutations les meilleures.
+			 </p>    
+
+			 <br> <br> 
+			 <div class="row"> 
+
+				<div class="col">
+						 
+				</div>
+
+				 <div class="col text-right">
+					 <p>
+						 <strong> La Responsable des Opérations RH </strong>
+					 </p>  
+	 
+				 </div>
+
+			 </div>
+
+			 <br> <br> <br>
+			 <div class="row"> 
+				 <div class="col">
+						 
+				 </div>
+
+				 <div class="col">
+					 
+					 <p class="text-right">
+						 <strong> Marie Danielle ACHI </strong>
+					 </p>  
+				 </div>
+			 </div>
+
+			 <br> <br> 
+
+		 </section>
+	 </main>
+</div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    function generatePDF() {
+				// Choose the element that our invoice is rendered in.
+				const element = document.getElementById('invoice');
+				// Choose the element and save the PDF for our user.
+				html2pdf().from(element).save();
+			}
+    
+</script>
