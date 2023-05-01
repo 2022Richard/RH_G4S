@@ -1,0 +1,70 @@
+<!-- Fenêtre Modale pour le champ Modèle -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modèle de courrier de démission à choisir</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p class="lead mb-4 text-md-center" > 
+   
+                <a href="{% url 'RH_G4S:modele_sans_PS' %}" target="_blank" type="button" class="btn btn-secondary"> Sans Préavis et Sans prêt scolaire </a>  <br> <br> 
+                <a href="{% url 'RH_G4S:modele' %}" type="button" class="btn btn-secondary">Sans Préavis et Avec prêt scolaire <br></a>
+                
+            </p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Fénêtre Modale pour le Champ Modèle-->
+
+<!-- Fenêtre Modale pour le Champ Lettre-->
+<div class="modal fade" id="exampleLettre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Lettre de démission à choisir</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p class="lead mb-4 text-md-center" > 
+   
+                <a href="{% url 'RH_G4S:lettre_sans_PS' %}" type="button" class="btn btn-secondary"> Sans Préavis et Sans prêt scolaire </a>  <br> <br> 
+                <a href="{% url 'RH_G4S:lettre' %}" type="button" class="btn btn-secondary">Sans Préavis et Avec prêt scolaire <br></a>
+                
+            </p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Fenêtre Modale pour le Champ Lettre -->
+
+<!-- Fenêtre Modale pour le Champ Contact-->
+<div class="modal fade" id="exampleContact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p class="lead mb-4 text-md-center" > 
+   
+                <a href="#" type="button" class="btn btn-secondary"> richard.kouassi@ci.g4s.com </a>
+               
+            </p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Fenêtre Modale pour le Champ Contact-->
