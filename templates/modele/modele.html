@@ -1,0 +1,43 @@
+{% extends 'static/base.html' %}
+   
+    {% block title %}
+
+        <title>Modèle</title>
+
+    {% endblock %}
+
+
+    {% block content %}
+
+            <section  class="my-5" id="connection">
+                <div class="container">
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-12 col-md-12">
+                            <h1 class="fw-bold text-md-center" id ="defile"><center>Modèle de lettre de démission sans Préavis</center></h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="information" class="py-5 bg-light">
+                <p class="lead mb-4 text-md-center" > 
+                     
+                    Veuillez cliquer sur l'un des boutons ci-dessous : <br>
+
+                    Pour visualiser un modèle de lettre de démission sans préavis et ... ,  <br>
+                                
+                </p>
+
+                <p class="lead mb-4 text-md-center" > 
+                   
+                    <a href="{% url 'RH_G4S:modele_sans_PS' %}" target="_blank" type="button" title="PS : Prêt Scolaire" class="btn btn-secondary">Sans PS</a>
+
+                    <a href="{% url 'RH_G4S:modele_PS_rembourse' %}" target="_blank" type="button" title="PS : Prêt Scolaire" class="btn btn-secondary">Avec PS dont le remboursement a débuté</a> 
+
+                    <a href="{% url 'RH_G4S:modele_PS_non_rembourse' %}" target="_blank" type="button" title="PS : Prêt Scolaire" class="btn btn-secondary">Avec PS dont le remboursement n'a pas débuté<br></a>
+                    
+                </p>
+
+            </section> 
+            
+    {% endblock %}
